@@ -1,0 +1,19 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav_bar {
+    width: 100vw;
+    height: 5rem;
+    background-color: blue;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav_bar ul {
+    display: flex;
+}

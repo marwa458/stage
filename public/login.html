@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log in!</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="login-contrainer">
+        <form method="post" class="login-form">
+            <!-- Gestion des erreurs d'authentification -->
+            <div class="alert alert-danger">Message d'erreur ici</div>
+            
+            <!-- Informations de connexion pour l'utilisateur connecté -->
+            <div class="mb-3 custom-logged-in-info">
+                You are logged in as Username, <a href="app_logout">Logout</a>
+            </div>
+            
+            <h1 class="h3 mb-3 font-weight-normal">Sign in</h1>
+            <div class="form-group">
+                <input type="email" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+                <label for="inputEmail">Email</label>
+                <i></i>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+                <label for="inputPassword">Password</label>
+                <i></i>
+            </div>
+            
+            <!-- Jeton CSRF -->
+            <input type="hidden" name="_csrf_token" value="csrf_token_value">
+            
+            <button class="btn btn-lg btn-primary" type="submit">Sign in</button>
+        </form>
+    </div>
+</body>
+</html>
