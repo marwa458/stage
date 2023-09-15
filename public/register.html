@@ -1,54 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>register!</title>
+    <title>Formulaire d'inscription</title>
     <link rel="stylesheet" href="css/register.css">
+    
 </head>
 <body>
-    <div class="register-contrainer">
+    <div class="register-container">
         <form method="post" class="register-form">
             
-            <h1 class="h3 mb-3 font-weight-normal">Create new account</h1>
-            
-            <!-- Champ first_name -->
-            <div class="form-group">
-                <input type="text" name="first_name" id="inputFirstName" class="form-control" autocomplete="given-name" required autofocus>
-                <label for="inputFirstName">First Name</label>
-                <i></i>
-            </div>
-            
-            <!-- Champ last_name -->
-            <div class="form-group">
-                <input type="text" name="last_name" id="inputLastName" class="form-control" autocomplete="family-name" required>
-                <label for="inputLastName">Last Name</label>
-                <i></i>
-            </div>
-            
-            <!-- Champ phone_number -->
-            <div class="form-group">
-                <input type="tel" name="phone_number" id="inputPhoneNumber" class="form-control" autocomplete="tel" required>
-                <label for="inputPhoneNumber">Phone Number</label>
-                <i></i>
-            </div>
+            <h1 class="h3 mb-3 font-weight-normal">Créer un nouveau compte</h1>
             
             <!-- Champ email -->
             <div class="form-group">
-                <input type="email" name="email" id="inputEmail" class="form-control" autocomplete="email" required>
+                <input type="email" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
                 <label for="inputEmail">Email</label>
                 <i></i>
             </div>
-            
-            <!-- Champ password  -->
+
+            <!-- Champ mot de passe -->
             <div class="form-group">
                 <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
-                <label for="inputPassword">Password</label>
+                <label for="inputPassword">Mot de passe</label>
+                <i></i>
+            </div>
+
+            <!-- Champ CIN -->
+            <div class="form-group">
+                <input type="text" name="cin" id="inputCIN" class="form-control" required>
+                <label for="inputCIN">CIN</label>
+                <i></i>
+            </div>
+
+            <!-- Champ date de naissance -->
+            <div class="form-group">
+                <input type="date" name="birthday" id="inputBirthday" class="form-control" required>
+                <label for="inputBirthday">Date de naissance</label>
+                <i></i>
+            </div>
+
+            <!-- Champ nom complet -->
+            <div class="form-group">
+                <input type="text" name="fullname" id="inputFullname" class="form-control" required>
+                <label for="inputFullname">Nom complet</label>
+                <i></i>
+            </div>
+
+            <!-- Champ adresse -->
+            <div class="form-group">
+                <input type="text" name="address" id="inputAddress" class="form-control" required>
+                <label for="inputAddress">Adresse</label>
+                <i></i>
+            </div>
+
+            <!-- Champ numéro de téléphone -->
+            <div class="form-group">
+                <input type="tel" name="tel" id="inputTel" class="form-control" required>
+                <label for="inputTel">Numéro de téléphone</label>
                 <i></i>
             </div>
             
-            <!-- Jeton CSRF  -->
+            <!-- Jeton CSRF -->
             <input type="hidden" name="_csrf_token" value="csrf_token_value">
             
-            <button class="btn btn-lg btn-primary" type="submit">Create new account</button>
+            <button class="btn btn-lg btn-primary" type="submit">Créer un nouveau compte</button>
         </form>
     </div>
 </body>
